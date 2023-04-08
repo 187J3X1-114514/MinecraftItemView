@@ -19,9 +19,12 @@ function command(itemname) {
 }
 function ans() {
     document.getElementById("main").className = "mdui-drawer-body-left mdui-loaded mdui-theme-layout-dark"
+    document.getElementById("github").style = 'filter: invert(0%)'
+    
 }
 function liangs() {
     document.getElementById("main").className = "mdui-drawer-body-left mdui-loaded"
+    document.getElementById("github").style = 'filter: invert(100%)'
 }
 function mcmodurl(rname) {
     return new Promise(function (resolve, reject) {
